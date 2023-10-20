@@ -1,12 +1,10 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { addStudent } from '../SLice/StudentSlice';
 
 function AddNewStudent() {
-    let StudentData = useSelector((state) => state.Student)
     let dispatch = useDispatch();
-    console.log(StudentData, dispatch);
     let NavigateToStudent = useNavigate();
 
     let newObj = {
