@@ -9,7 +9,6 @@ let StudentData = useSelector((state)=> state.Student);
 
 
 let handleDelete = (itemIndex) => {
-  
  dispatch(deleteStudent(itemIndex));
 }
 

@@ -33,7 +33,8 @@ const StudentSlice = createSlice({
         },
 
         deleteStudent : (state, action)=>{
-         
+          delete state[action.payload];
+          state= [...state];
         }
     }
 });
